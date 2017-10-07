@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+    android:id="@+id/text_servicio_rest"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:text="Nombre"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_servicio_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nombre"
+        android:inputType="textPassword"
+        android:padding="12dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/edit_servicio_est_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_producto"
+        android:background="#ffd33a26"
+        android:padding="5dp"
+        android:text="No dilegenciado"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:id="@+id/description_servicio_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Descripcion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_description_servicio_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripcion"
+        android:padding="12dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/description_producto_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre_producto"
+        android:background="#ffd33a26"
+        android:padding="5dp"
+        android:text="No dilegenciado"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:id="@+id/cantidad_servicio_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Cantidad"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_cantidad_servicio_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/cantidad_producto_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/precio_producto"
+        android:background="#ffd33a26"
+        android:padding="5dp"
+        android:text="No dilegenciado"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:id="@+id/precio_servicio_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Precio"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_precio_servicio_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:padding="12dp">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/precio_producto_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cantidad_producto"
+        android:background="#ffd33a26"
+        android:padding="5dp"
+        android:text="No dilegenciado"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_creacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear" />
+        />
+</LinearLayout>

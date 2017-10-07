@@ -7,6 +7,7 @@ package com.cosmo.arquitecturamvpbase.views;
 public interface IBaseView {
 
 
+    public  void showProgress(String message);
     public  void showProgress(int message);
     public  void hideProgress();
 }

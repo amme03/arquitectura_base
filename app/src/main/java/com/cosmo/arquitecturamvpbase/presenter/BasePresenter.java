@@ -7,7 +7,7 @@ import com.cosmo.arquitecturamvpbase.views.IBaseView;
  * Created by leidyzulu on 16/09/17.
  */
 
-public class BasePresenter <T extends IBaseView>{
+public class BasePresenter <T extends IBaseView> {
 
     private T view;
     private IValidateInternet validateInternet;

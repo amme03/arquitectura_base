@@ -13,4 +13,5 @@ public interface IProductView extends IBaseView {
 
 
     void showProductList(ArrayList<Product> productArrayList);
+    void showAlertDialog(final int id, final int message);
 }

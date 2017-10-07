@@ -5,4 +5,33 @@
     <string name="product_quantity">Cantidad</string>
     <string name="product_price">Precio</string>
     <string name="loading_message">Cargando...</string>
+    <string name="validate_internet">Cargando...</string>
+    <string name="error">error</string>
+    <string name="corret">OK</string>
+    <string name="remove_product">Borrar Producto</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="error_delete_produt">Error borrando</string>
+    <string name="crear">Crear empanada</string>
+    <string name="crear_user">Crear usuario</string>
+    <string name="error_consultando_user">Error consultando</string>
+    <string name="surname">Segundo nombre</string>
+    <string name="name">Nombre</string>
+    <string name="user_surname">Apellido</string>
+    <string name="number_phone">Telefono</string>
+    <string name="description_phone">Descripcion</string>
+    <string name="location_type_phone">Tipo</string>
+    <string name="location_coodinatesX_phone">Longitud</string>
+    <string name="location_coodinatesY_phone">Latitud</string>
+    <string name="customer_title">Crear cliente</string>
+    <string name="customer_name">Nombre</string>
+    <string name="customer_surname">Apellido</string>
+    <string name="customer_phonelisttitle">Telefonos</string>
+    <string name="customer_phonedescription">Descripcion</string>
+    <string name="customer_phonenumber">Numero</string>
+    <string name="customer_coordinatestitle">Localizacion</string>
+    <string name="customer_longitud">longitud</string>
+    <string name="customer_latitud">Latitud</string>
+    <string name="customer_btnCreate">Crear</string>
+
 </resources>

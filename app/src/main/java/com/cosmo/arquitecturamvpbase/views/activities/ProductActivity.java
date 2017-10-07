@@ -1,5 +1,6 @@
 package com.cosmo.arquitecturamvpbase.views.activities;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
  */
 
 public class ProductActivity extends BaseActivity<ProductPresenter> implements IProductView {
+
 
     private ListView productList;
     private ProductAdapter productAdapter;
@@ -53,6 +55,31 @@ public class ProductActivity extends BaseActivity<ProductPresenter> implements I
         });
 
     }
+    @Override
+    public void showAlertDialog(int title, int message) {
+           showAlertDialog(title,getResources().getString(message));
+    }
+
+
+    private void showAlertDialog(final int title, final String message) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                getShowAlertDialog().showAlertDialog(title, message, false, R.string.accept, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        getPresenter().getListProduct();
+                    }
+                }, R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+            }
+        });
+    }
+
 
     private void callAdapter(final ArrayList<Product> productArrayList) {
         productAdapter =  new ProductAdapter(this, R.id.product_listView, productArrayList);
